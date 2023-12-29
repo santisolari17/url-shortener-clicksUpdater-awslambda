@@ -1,5 +1,5 @@
 export const deleteEvents = async (eventIds, dynamoClient) => {
-  const deleteBatchSize = 5;
+  const deleteBatchSize = 10;
   const chunks = splitArrayIntoChunks(eventIds, deleteBatchSize);
   
   for (const ids of chunks) {

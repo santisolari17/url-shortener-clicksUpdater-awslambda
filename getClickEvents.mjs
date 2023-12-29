@@ -9,7 +9,7 @@ export const getClickEvents = async (dynamoClient) => {
       ExpressionAttributeValues: {
         ':eventType': 'IncreaseClickEvent',
       },
-      Limit: 20,
+      Limit: 100,
       ScanIndexForward: true, // Sort in descending order based on lastVisited
     };
     

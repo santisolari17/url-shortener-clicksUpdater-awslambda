@@ -10,6 +10,6 @@ the serverless function processes the events in in order of occurrence to avoid 
 ## Lambda function specs
 
 * Name: clicksUpdater
-* Runs every 30 seconds.
+* Runs every 1 minute.
 * Processes 100 events per execution.
-* Deletes processed events from the `appEvents` table in batches of 5.
+* Deletes processed events from the `appEvents` table in batches of 10.
